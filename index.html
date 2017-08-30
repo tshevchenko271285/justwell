@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Movement maker</title>
+	<link rel="stylesheet" href="css/style.css">
+	<script src="node_modules/jquery/dist/jquery.min.js"></script>
+</head>
+<body>
+	<div id="canvas" class="canvas">
+		<div id="square" class="canvas__square canvas__square_blue"></div>
+	</div>
+	<div class="control-elements">
+		<div id="play" class="control-elements__play">
+		</div>
+		<div class="control-elements__stop">
+		</div>
+	</div>
+	<div class="new-movement">
+		<form id="moveForm" class="new-movement__form">
+			<div class="new-movement__element-form">
+				<label for="direction" class="new-movement__title-element-form">Direction</label>
+				<select name="direction" class="new-movement__direction">
+					<option value="top">top</option>
+					<option value="bottom">bottom</option>
+					<option value="right">right</option>
+					<option value="left" selected="selected">left</option>
+				</select>
+			</div>
+			<div class="new-movement__element-form">
+				<label for="duration" class="new-movement__title-element-form">Duration</label>
+				<input type="number" name="duration" class="new-movement__duration">
+			</div>
+			<div class="new-movement__element-form">
+				<div id="addNewMove" class="new-movement__button">Add</div>
+			</div>
+		</form>
+	</div>
+	<div class="movements-block">
+		<table id="tableMove" class="movements-table">
+
+				<tr>
+					<th class="movements-table__column-number">#</th>
+					<th class="movements-table__column-direction">Direction</th>
+					<th class="movements-table__column-duration">Duration</th>
+					<th class="movements-table__column-buttons"></th>
+				</tr>
+
+		</table>
+	</div>
+	<script src="js/functions.js"></script>
+	<script>
+/*			var motion = {
+		0: {
+			number: 1,
+			direction: 'left',
+			duration: 1
+		}
+		
+	};*/
+	</script>
+</body>
+</html>

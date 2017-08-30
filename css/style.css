@@ -1,0 +1,118 @@
+.flex {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+html,
+body,
+div,
+table,
+thead,
+tbody,
+tr,
+td,
+td {
+  margin: 0;
+  padding: 0;
+}
+html {
+  max-width: 100%;
+}
+.canvas {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  height: 200px;
+  margin: 20px 30px;
+  position: relative;
+  border: 1px solid #dcdcdc;
+}
+.canvas__square {
+  width: 40px;
+  height: 40px;
+  margin: auto;
+}
+.canvas__square_blue {
+  background: #00bbae;
+}
+.control-elements {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.control-elements__play {
+  margin-right: 10px;
+  border: 10px solid transparent;
+  border-left: 20px solid #1c7900;
+}
+.control-elements__stop {
+  width: 20px;
+  height: 20px;
+  background: #ff0000;
+}
+.new-movement {
+  margin: 20px auto;
+}
+.new-movement__form {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.new-movement__element-form {
+  margin: auto 5px;
+}
+.new-movement__direction {
+  width: 200px;
+  padding: 5px;
+}
+.new-movement__duration {
+  width: 200px;
+  padding: 5px;
+}
+.new-movement__button {
+  width: 70px;
+  padding: 5px;
+  background: #1c7900;
+  border: 0px solid $grayLight;
+  text-align: center;
+  color: white;
+}
+.new-movement__button:hover {
+  cursor: pointer;
+}
+.movements-table {
+  width: 95%;
+  box-sizing: border-box;
+  margin: 20px auto;
+  border-collapse: collapse;
+  border: 1px solid #dcdcdc;
+}
+.movements-table tr,
+.movements-table td,
+.movements-table th {
+  border: 1px solid #dcdcdc;
+}
+.movements-table__column-number {
+  width: 5%;
+}
+.movements-table__column-direction {
+  width: 40%;
+}
+.movements-table__column-duration {
+  width: 40%;
+}
+.movements-table__column-buttons {
+  width: 15%;
+}
