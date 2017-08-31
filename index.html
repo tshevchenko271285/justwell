@@ -4,18 +4,20 @@
 	<meta charset="UTF-8">
 	<title>Movement maker</title>
 	<link rel="stylesheet" href="css/style.css">
-	<script src="node_modules/jquery/dist/jquery.min.js"></script>
 </head>
 <body>
+
 	<div id="canvas" class="canvas">
 		<div id="square" class="canvas__square canvas__square_blue"></div>
 	</div>
+	
 	<div class="control-elements">
 		<div id="play" class="control-elements__play">
 		</div>
 		<div class="control-elements__stop">
 		</div>
 	</div>
+
 	<div class="new-movement">
 		<form id="moveForm" class="new-movement__form">
 			<div class="new-movement__element-form">
@@ -36,6 +38,7 @@
 			</div>
 		</form>
 	</div>
+
 	<div class="movements-block">
 		<table id="tableMove" class="movements-table">
 
@@ -43,21 +46,14 @@
 					<th class="movements-table__column-number">#</th>
 					<th class="movements-table__column-direction">Direction</th>
 					<th class="movements-table__column-duration">Duration</th>
-					<th class="movements-table__column-buttons"></th>
+					<th class="movements-table__column-edit"></th>
+					<th class="movements-table__column-delete"></th>
 				</tr>
 
 		</table>
 	</div>
-	<script src="js/functions.js"></script>
-	<script>
-/*			var motion = {
-		0: {
-			number: 1,
-			direction: 'left',
-			duration: 1
-		}
-		
-	};*/
-	</script>
+
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
+<script src="js/functions.js"></script>
 </body>
 </html>
